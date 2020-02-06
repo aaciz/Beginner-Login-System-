@@ -1,7 +1,7 @@
 # Login-System-
 PHP Login system
 
-Tables 
+# Create Tables
 CREATE TABLE users (
     idUsers int(11) AUTO_INCREMENT PRIMARY KEY NOT NUll,
     uidUsers TINYTEXT NOT NULL,
