@@ -14,5 +14,5 @@ require 'includes/header.php';
 </main>
 
 <?php
-require 'includes/foote.php';
+require 'includes/footer.php';
 ?>
