@@ -6,7 +6,6 @@ if (isset($_POST['signup-submit'])) {
     $email = $_POST['mail'];
     $password =  $_POST['pwd'];
     $passwordRepeat = $_POST['pwd-repeat'];
-    echo "$username";
     if (empty($username) || empty($email) || empty($passwordRepeat)) {
         header("Location: ../signup.php?errror=emptyfields&uid=" . $username . "&mail=" . $email);
         exit();
@@ -20,7 +19,7 @@ if (isset($_POST['signup-submit'])) {
         header("Location: ../signup.php?errror=invaliduid&email=" . $email);
         exit();
     } else if ($password !== $passwordRepeat) {
-        header("Location: ../signup.php?errror=passwordchecks&uid=" . $username . "&mail=" . $email);
+        header("Location: ../signup.php?errror=passwordcheck&uid=" . $username . "&mail=" . $email);
         exit();
     } else {
         $sql = "SELECT uidUsers FROM users WHERE uidUsers = ?";
