@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -24,19 +27,25 @@
                 </ul>
             </div>
             <div class="navigation_form">
-                <div class="form-group">
+                <?php
+                if (isset($_SESSION['userId'])) {
+                    echo '<div class="form-group">
+                    <form action="includes/logout.inc.php" method="post">
+                        <button type="submit" name="logout-submit" class="btn">Logout</button>
+                    </form>
+                </div>';
+                } else {
+                    echo '<div class="form-group">
                     <form action="includes/login.inc.php" method="post">
                         <input type="text" name="mailuid" placeholder="Username/Email..">
                         <input type="password" name="pwd" placeholder="Password..">
-                        <button type="submit" name="login_submit" class="btn">Login</button>
+                        <button type="submit" name="login-submit" class="btn">Login</button>
                     </form>
                 </div>
-                <a href="signup.php">Signup</a>
-                <div class="form-group">
-                    <form action="includes/logout.inc.php" method="post">
-                        <button type="submit" name="logout_submit" class="btn">Logout</button>
-                    </form>
-                </div>
+                <a href="signup.php">Signup</a>';
+                }
+                ?>
+
             </div>
         </nav>
     </header>
