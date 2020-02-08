@@ -1,5 +1,5 @@
 # Login-System-
-PHP Login system
+PHP Login system with reset password
 
 # Create Tables
 CREATE TABLE users (
