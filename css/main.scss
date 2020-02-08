@@ -26,6 +26,8 @@ button {
     height: 25px;
 }
 
+
+
 header {
     background-color: #fff;
     nav {
@@ -115,5 +117,11 @@ header {
             margin-bottom: 10px;
             outline: none;
         }
+    }
+    .signuperror {
+       color: red;
+    }
+    .signupsuccess {
+        color: green;
     }
 }

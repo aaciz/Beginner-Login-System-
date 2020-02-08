@@ -136,4 +136,12 @@ header nav .navigation_form .form-group input {
   margin-bottom: 10px;
   outline: none;
 }
+
+.signup-form .signuperror {
+  color: red;
+}
+
+.signup-form .signupsuccess {
+  color: green;
+}
 /*# sourceMappingURL=main.css.map */
