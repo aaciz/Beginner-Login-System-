@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap');
 * {
     box-sizing: border-box;
 }
@@ -24,6 +24,25 @@ button {
     background-color: #000;
     color: #fff;
     height: 25px;
+}
+
+.w-400 {
+    font-weight: 400;
+}
+.w-700 {
+    font-weight: 700;
+}
+
+.w-600 {
+    font-weight: 600;
+}
+
+.secondary-text {
+    font-size: 12px;
+}
+
+.text-upper {
+    text-transform: uppercase;
 }
 
 
@@ -91,7 +110,7 @@ header {
     }
 }
 
-.signup-form {
+.box{
     background-color: #fff;
     text-align: center;
     margin-top: 10px;
@@ -123,5 +142,12 @@ header {
     }
     .signupsuccess {
         color: green;
+    }
+    a {
+        color: #000;
+        display: block;
+        text-decoration: none;
+        font-size: 12px;
+        padding-bottom: 10px;
     }
 }

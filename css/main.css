@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Open+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap");
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -28,6 +28,26 @@ button {
   background-color: #000;
   color: #fff;
   height: 25px;
+}
+
+.w-400 {
+  font-weight: 400;
+}
+
+.w-700 {
+  font-weight: 700;
+}
+
+.w-600 {
+  font-weight: 600;
+}
+
+.secondary-text {
+  font-size: 12px;
+}
+
+.text-upper {
+  text-transform: uppercase;
 }
 
 header {
@@ -110,7 +130,7 @@ header nav .navigation_form .form-group input {
   line-height: 20px;
 }
 
-.signup-form {
+.box {
   background-color: #fff;
   text-align: center;
   margin-top: 10px;
@@ -121,11 +141,11 @@ header nav .navigation_form .form-group input {
   padding: 20px;
 }
 
-.signup-form h1 {
+.box h1 {
   font-size: 18px;
 }
 
-.signup-form form input {
+.box form input {
   display: block;
   width: 50%;
   margin: 10px auto;
@@ -137,11 +157,19 @@ header nav .navigation_form .form-group input {
   outline: none;
 }
 
-.signup-form .signuperror {
+.box .signuperror {
   color: red;
 }
 
-.signup-form .signupsuccess {
+.box .signupsuccess {
   color: green;
+}
+
+.box a {
+  color: #000;
+  display: block;
+  text-decoration: none;
+  font-size: 12px;
+  padding-bottom: 10px;
 }
 /*# sourceMappingURL=main.css.map */
