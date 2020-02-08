@@ -2,7 +2,7 @@
 require 'includes/header.php';
 ?>
 
-<main class="signup-form">
+<main class="box">
     <h1>Signup</h1>
     <?php
     if (isset($_GET['error'])) {
@@ -26,6 +26,7 @@ require 'includes/header.php';
         <input type="text" name="mail" placeholder="E-mail">
         <input type="password" name="pwd" placeholder="Password">
         <input type="password" name="pwd-repeat" placeholder="Repeat Password">
+        <a href="reset-password.php">Forgot Your password </a>
         <button type="submit" name="signup-submit" class="btn">Signup</button>
     </form>
 </main>
